@@ -227,7 +227,37 @@ nav a.selected, nav a:hover {
   color: #32673f;
 }
 
+/*******************************
+PAGE: UNDER CONSTRUCTION
+*******************************/
+.underconstruction-body {
+  background-color: lightgray;
+}
 
+.underconstruction {
+  align-items: center;
+  text-align: center;
+}
 
+.underconstruction h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 5em;
+  font-weight: 500;
+  color: rgb(87, 87, 87);
+}
 
+.underconstruction h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+}
 
+.underconstruction p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: rgb(87, 87, 87);
+}
+
+.underconstruction i {
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
