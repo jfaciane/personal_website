@@ -1,0 +1,135 @@
+/*******************************
+GENERAL
+*******************************/
+body {
+    margin:0;
+    background-color:#0D083B;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration:none;
+    color:#837EB1;
+}
+
+a:visited {
+    color:#837EB1;
+}
+
+a.selected{
+    color:#5A5494;
+}
+
+a:hover {
+    color:#5A5494;
+}
+
+.clear {
+    clear:both;
+}
+
+h3,p {
+    color:#837EB1;
+}
+
+/*******************************
+HEADER
+*******************************/
+
+header {
+    background-color:#383276;
+    opacity: 0.;
+    margin:0 0 30px 0;
+    padding-bottom:0px;
+    width:100%
+}
+
+
+header h1{
+    font-family:'Amatic SC',cursive;
+    font-size: 3em;
+    font-weight: bold;
+    margin:0;
+    color:#837EB1;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+#logo {
+    text-align:center;
+    margin-left:0;
+    float:left;
+    padding:0 10px 2px 20px;
+}
+
+
+/*******************************
+NAV
+*******************************/
+
+nav {
+    float: right;
+    text-align:center;
+    padding:6px 20px 0 0;
+    margin: 0 auto;
+}
+
+ul {
+    list-style:none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+
+
+/*******************************
+SPLASH PAGE
+*******************************/
+
+.splash-page {
+    background-image:url(images/Splash_Image.jpg);
+}
+
+/*******************************
+ABOUT PAGE
+*******************************/
+
+.bio-wrapper {
+    margin:5% 10% 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.profile-photo {
+    height: auto;
+    width:30%;
+    float:left;
+    box-shadow: 5px 5px 12px #383276;
+    margin:auto 0 auto 10%;
+ }
+
+.biography {
+    display: inline-block;
+    float:left;
+    width: 50%;
+    height: auto;
+    #padding:auto 2% auto 2%;
+    padding-left: 5%
+}
+
+/*******************************
+FOOTER
+*******************************/
+
+.footer {
+    color: #837EB1;
+    font-size:25px;
+    margin:2% 40% 2% 40%;
+    position:relative;
+    align-items: center;
+    text-align: center;
+}
