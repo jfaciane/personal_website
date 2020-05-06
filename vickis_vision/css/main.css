@@ -3,8 +3,7 @@ GENERAL
 *******************************/
 body {
     margin:0;
-    background-color:#0D083B;
-    font-family: 'Oswald', sans-serif;
+    background-color:rgb(204, 204, 204);
 }
 
 a {
@@ -30,6 +29,30 @@ a:hover {
 
 h3,p {
     color:#837EB1;
+}
+
+/*******************************
+SPLASH
+*******************************/
+.splash-page {
+    align-items: center;
+    text-align: center;
+    margin: 20% 0 0 0;
+}
+
+.splash-page h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+}
+
+.splash-page h2 {
+    font-family: 'Cardo', serif;
+    font-size: 3em;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
 }
 
 /*******************************
