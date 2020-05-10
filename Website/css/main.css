@@ -1,274 +1,155 @@
-/*******************************
-GENERAL
-*******************************/
+/*Base design*/
 
 body {
-  font-family: 'Open Sans', sans-serif
+    margin: 0;
+    padding: 0;
+    background-color: #AAABB8;
 }
-
-#wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-  clear: both;
-}
-
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-img {
-  max-width: 100%;
+a:hover {
+    color: #2E9CCA;
 }
 
-h3 {
-  margin: 0 0 1em 0;
+.logo {
+    background-color: 	#25274D;
+    text-align: center;
+    padding-top: 10px;
 }
-
-/*******************************
-HEADING
-*******************************/
 
 header {
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-  width: 100%;
+    width: 100%;
+    position:sticky;
+    overflow: hidden;
+    top: 0;
 }
 
-#logo {
-  text-align: center;
-  margin: 0;
+footer {
+    text-align: center;
 }
+
+.clear {
+    clear: both;
+}
+
+/*Text*/
 
 h1 {
-  font-family: 'Changa One', sans-serif;
-  margin: 15px 0;
-  font-size: 1.75em;
-  font-weight: normal;
-  line-height: 0.8em;
+    font-size: 5em;
+    font-family: 'Fjalla One', sans-serif;
+    color: #2E9CCA;
+    margin: 0;
 }
 
 h2 {
-  font-size: 0.75em;
-  margin: -5px 0 10px;
-  font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    color: #2E9CCA;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
 }
 
 
-
-/*******************************
-NAVIGATION
-*******************************/
-
+/*nav*/
 nav {
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
+    background-color: #29648A;
+    margin:0;
+    padding: 0;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0; 
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
 }
 
 nav li {
-  display: inline-block;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 2%;
+    position: relative;
+    padding-top: 8px;
+
 }
 
-nav a {
-   font-weight: 800;
-   padding: 15px 10px;
+nav a::before {
+    content: '';
+    display: block;
+    background-color: #2E9CCA;
+    height: 3px;
+    position: absolute;
+    
+    top: 0;
+    width: 0%;
+     
+    transition: all ease-in-out 250ms;
 }
 
+nav a:hover::before {
+    width: 100%;
+}
 
+/*Section: Home*/
 
-/*******************************
-FOOTER
-*******************************/
+#wrapper {
+    margin: 20px;
+}
+
+#profile-photo {
+    float: left;
+    width: 45%;
+    max-height: 95%;
+    margin: 10px;
+    box-shadow: 3px 3px 15px 1px;
+}
+
+.profile-text {
+    float: right;
+    width:45%;
+    text-align: left;
+}
+
+/*Footer*/
 
 footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
-  color: #ccc;
+    background-color: #AAABB8;
+    width:100%;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    Padding-bottom: 10px;
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+i {
+    font-size: 30px;
 }
 
-
-
-/*******************************
-PAGE: WORKS
-*******************************/
-#subnav {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+footer a {
+    color: #25274D;
 }
 
-#subnav li {
-	display: inline-block;
-	margin: 0 0 0 2.5%;
+footer a:hover {
+    color: #29648A;
 }
 
-#gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#gallery li {
-  float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
-}
-
-#gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7;
-}
-
-
-
-/*******************************
-PAGE: ABOUT
-*******************************/
-
-.profile-photo {
-  display: block;
-  max-width: 200px;
-  margin: 0 auto 30px;
-  border-radius: 20px;
-}
-
-
-
-/*******************************
-PAGE: CONNECT
-*******************************/
-
-.contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
-}
-
-.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px; 
-}
-
-
-.contact-info li.mail a {
-  background-image: url('../img/mail.png')
-}
-
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png')
-}
-
-
-
-/*******************************
-COLORS
-*******************************/
-
-/* site body */
-body {
-   background-color: #fff;
-   color: #999;
-}
-
-/* green header */
-header {
-   background: #6ab47b;
-   border-color: #599a68;
-}
-
-/* nav background on mobile */
-nav {
-   background: #599a68;
-}
-
-/* logo text */
-h1, h2 {
-   color:#fff;
-}
-
-/* links */
- a {
-   color: #6ab47b;
-}
-
-/* nav link */
-nav a, nav a:visited {
-   color: #fff;
-}
-
-/* selected nav link */
-nav a.selected, nav a:hover {
-  color: #32673f;
-}
-
-/*******************************
-PAGE: UNDER CONSTRUCTION
-*******************************/
-.underconstruction-body {
-  background-image: url(../img/gray_bg.jpg);
-  background-size:100%;
-}
-
-.underconstruction {
-  align-items: center;
-  text-align: center;
-  padding: 20% 0 0 0;
-}
-
-.underconstruction h1 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 5em;
-  font-weight: 500;
-  color: rgb(117, 117, 117);
-}
-
-.underconstruction h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.5em;
-  color: rgb(187, 187, 187)
-}
-
-.underconstruction footer {
-  padding: 70px;
-}
-
-.underconstruction p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
-  color: rgb(117, 117, 117);
-}
-
-.underconstruction i {
-  font-size: 25px;
-  color: rgb(117, 117, 117);
-}
-
-.underconstruction i:hover {
-  color: rgb(150, 150, 150);
+footer p {
+    font-size: .8em;
 }

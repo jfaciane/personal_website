@@ -2,25 +2,25 @@
 GENERAL
 *******************************/
 body {
-    margin:0;
-    background-color:rgb(204, 204, 204);
+    margin: 0;
+    background-color: rgb(177, 197, 199);
 }
 
 a {
     text-decoration:none;
-    color:#837EB1;
+    color:#417C81;
 }
 
 a:visited {
-    color:#837EB1;
+    color:#417C81;
 }
 
 a.selected{
-    color:#5A5494;
+    color:#012F34;
 }
 
 a:hover {
-    color:#5A5494;
+    color:#012F34;
 }
 
 .clear {
@@ -28,7 +28,8 @@ a:hover {
 }
 
 h3,p {
-    color:#837EB1;
+    color: black;
+    font-family: 'cardo', sans-serif;
 }
 
 /*******************************
@@ -47,43 +48,32 @@ SPLASH
     padding: 0;
 }
 
-.splash-page h2 {
-    font-family: 'Cardo', serif;
-    font-size: 3em;
-    font-style: italic;
-    margin: 0;
-    padding: 0;
-}
-
 /*******************************
 HEADER
 *******************************/
 
 header {
-    background-color:#383276;
+    background: #55d6aa;
     opacity: 0.;
-    margin:0 0 30px 0;
-    padding-bottom:0px;
+    margin:0;
+    padding-bottom:0;
     width:100%
 }
 
-
 header h1{
-    font-family:'Amatic SC',cursive;
-    font-size: 3em;
+    font-family:'Montserrat', sans-serif;
+    font-size: 2em;
     font-weight: bold;
-    margin:0;
-    color:#837EB1;
-    text-shadow: 1px 1px 1px black;
+    margin: 0;
+    padding-top: 10px; 
+    color:#417C81;
 }
-
 
 #logo {
     text-align:center;
-    margin-left:0;
     float:left;
-    padding:0 10px 2px 20px;
-}
+    margin-left:20px
+}  
 
 
 /*******************************
@@ -92,18 +82,43 @@ NAV
 
 nav {
     float: right;
-    text-align:center;
-    padding:6px 20px 0 0;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
     list-style:none;
+    padding: 0;
 }
 
 nav li {
     display: inline-block;
-    padding: 0 5px 0 5px;
+    margin-left: 5px;
+    padding-top: 23px;
+    position: relative;
+    font-family: 'Cardo', sans-serif;
+}
+
+nav a {
+    text-transform: uppercase;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    background-color: teal;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+   
+    top: 0;
+    width: 0%;
+   
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
 
 
@@ -131,7 +146,7 @@ ABOUT PAGE
     height: auto;
     width:30%;
     float:left;
-    box-shadow: 5px 5px 12px #383276;
+    box-shadow: 5px 5px 12px #417C81;
     margin:auto 0 auto 10%;
  }
 
