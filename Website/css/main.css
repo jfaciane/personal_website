@@ -6,6 +6,11 @@ body {
     background-color: #AAABB8;
 }
 
+
+#wrapper {
+    margin: 20px;
+}
+
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -109,8 +114,8 @@ nav a:hover::before {
 
 /*Section: Home*/
 
-#wrapper {
-    margin: 20px;
+.home {
+    height: 1000px;
 }
 
 #profile-photo {
