@@ -1,5 +1,8 @@
 @media screen and (min-width: 480px) {
-    
+    nav li {
+        font-size: 0.8em;
+        margin: 0 1%;
+    }
 }
 
 @media screen and (min-width: 660px) {
@@ -12,8 +15,9 @@
         font-size: 2em;
     }
     
-    li {
-        font-size: 0.9em; 
+    nav li {
+        font-size: 1.2em;
+        margin: 0 2%;
     }
     
     p {
