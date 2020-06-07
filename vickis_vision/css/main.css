@@ -35,10 +35,16 @@ h3,p {
 /*******************************
 SPLASH
 *******************************/
+#splash-page {
+    background-image: url("../images/Splash_Image.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
 .splash-page {
     align-items: center;
     text-align: center;
-    margin: 20% 0 0 0;
+    margin: 5% 0 0 0;
 }
 
 .splash-page h1 {
