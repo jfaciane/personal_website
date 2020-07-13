@@ -1,39 +1,7 @@
 @media screen and (min-width: 480px) {
-    nav li {
-        font-size: 0.8em;
-        margin: 0 1%;
-    }
+    
 }
 
 @media screen and (min-width: 660px) {
-/* Header */
-    h1 {
-        font-size: 1em;
-    }
-    
-    h2 {
-        font-size: 0.5em;
-    }
-    
-    nav li {
-        font-size: 1.2em;
-        margin: 0 2%;
-    }
-    
-    p {
-        font-size: 1.2em;
-    }
-    
-    #wrapper {
-        margin: 20px 10%
-    }
-    
-    #profile-photo {
-        width: 30%  
-    }
-    
-    .profile-text {
-        width: 60%
-    }
     
 }
