@@ -6,11 +6,6 @@ body {
     background-color: #AAABB8;
 }
 
-
-#wrapper {
-    margin: 20px;
-}
-
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -33,8 +28,8 @@ header {
     top: 0;
 }
 
-footer {
-    text-align: center;
+section {
+    margin: 10% 0;
 }
 
 .clear {
@@ -55,6 +50,7 @@ a.anchor {
 .container a:hover {
     color: #2E9CCA;
 }
+
 /*Text*/
 
 h1 {
@@ -175,6 +171,7 @@ footer {
     overflow: hidden;
     bottom: 0;
     Padding-bottom: 10px;
+    text-align: center;
 }
 
 i {

@@ -3,6 +3,10 @@
         font-size: 0.8em;
         margin: 0 1%;
     }
+
+    #wrapper {
+        margin: 20px 5%;
+    }
 }
 
 @media screen and (min-width: 660px) {
@@ -25,15 +29,15 @@
     }
     
     #wrapper {
-        margin: 20px 10%
+        margin: 5% 15%;
     }
     
     #profile-photo {
-        width: 30%  
+        width: 30%; 
     }
     
     .profile-text {
-        width: 60%
+        width: 60%;
     }
     
 }
