@@ -1,43 +1,48 @@
-@media screen and (min-width: 480px) {
-    nav li {
-        font-size: 0.8em;
-        margin: 0 1%;
+@media only screen and (min-width: 768px) {
+    /* Nav */
+    #nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    #wrapper {
-        margin: 20px 5%;
+    #nav-logo h2 {
+        font-size: 3rem;
+        margin: 0;
+        text-align: center;
     }
+
+    #nav-logo p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #nav-links ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-links li {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 900;
+        display: inline;
+        font-size: 1rem;
+    }
+    
+    section {
+        flex-direction: row;
+        flex: 0 1 auto;
+        justify-content: space-around;
+        min-height: 100vh;
+        padding: 8% 5%;
+    }
+
 }
 
-@media screen and (min-width: 660px) {
-/* Header */
-    h1 {
-        font-size: 4em;
+@media only screen and (min-width: 1000px) {
+    .circular-image {
+        width: 300px;
+        height: 300px;
     }
-    
-    h2 {
-        font-size: 2em;
-    }
-    
-    nav li {
-        font-size: 1.2em;
-        margin: 0 2%;
-    }
-    
-    p {
-        font-size: 1.2em;
-    }
-    
-    #wrapper {
-        margin: 5% 15%;
-    }
-    
-    #profile-photo {
-        width: 30%; 
-    }
-    
-    .profile-text {
-        width: 60%;
-    }
-    
+
 }

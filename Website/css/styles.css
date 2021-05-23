@@ -1,0 +1,212 @@
+/* Font Related */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&display=swap');
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    /* color: white; */
+}
+
+h3, h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.blur-text {
+    color: transparent;
+    text-shadow: 0 0 15px #000;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: crimson;
+}
+
+.panel a:hover {
+    color: white;
+}
+/* Colors */
+
+.red-text {
+    color: crimson;
+}
+
+.white-text {
+    color: white;
+}
+
+body {
+    background-color: #E1E2E7;
+}
+
+/* Containers */
+.container-splash {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 5%;
+}
+
+.panel {
+    background-color: #BF4C41;
+    box-shadow: 5px 5px 20px black;
+    margin: 2%;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    overflow:hidden;
+    bottom: 0;
+    padding-bottom: 5px;
+    background-color: #E1E2E7;
+}
+
+/* Sections Start*/
+/* Splash */
+.splash-logo {
+    text-align: center;
+}
+
+.splash-logo h1,p  {
+    margin: 0
+}
+
+.splash-logo h1 {
+    font-size: 5rem;
+}
+
+.splash-logo p {
+    font-size: 2rem;
+}
+
+#splash-enter {
+    background-color: transparent;
+    border: none;
+}
+
+#splash-enter:hover {
+    color: black;
+    text-shadow: none;
+    transition: ease-out 200ms;
+}
+
+#splash-enter:hover h1 {
+    color: crimson;
+    transition: ease-out 200ms;
+}
+
+/* Main */
+#main-site {
+    display: none;
+}
+
+
+
+/* Nav */
+#nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcc0c5;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+#nav-logo h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+#nav-logo p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#nav-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-links li {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    display: inline;
+    font-size: 0.7rem;
+    padding: 10px;
+}
+
+/* About */
+
+.circular-image {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    box-shadow: 5px 5px 20px black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profile-picture {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Gameography */
+
+
+/* Contact */
+#socials-container {
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+#socials-container i {
+    margin: 10px;
+}

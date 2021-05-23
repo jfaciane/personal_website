@@ -3,16 +3,110 @@
     <head>
         <meta charset="utf-8">
         <title>John Faciane | Video Game Producer</title>
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:ital@0;1&display=swap" rel="stylesheet"> -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/responsive.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/30444e0785.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
-        <a class="anchor" id="home"></a>
+        <div id="splash-page">
+            <div class="container-splash">
+                <div class="splash-logo">
+                    <button type="button" id="splash-enter" onclick="enterSite()" class="blur-text">
+                        <h1>John Faciane</h1>
+                        <p>Video Game Producer</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <main id="main-site">
+            <nav id="nav-container">
+                <div id="nav-logo">
+                    <h2 class="red-text">John Faciane</h2>
+                    <p>Video Game Producer</p>
+                </div>
+                <div id="nav-links">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#personal-projects">Personal Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section id="about">
+                <div class="circular-image container-grid-left">
+                    <img src="img/johnprofile.jpg" alt="picture of John Faciane" id="profile-picture">
+                </div>
+                <div class="panel">
+                    <h2>Hi, I'm John</h2>
+                    <p> I am a video game producer with over 8 years of production experience spanning across mobile, console, PC, and browser-based games as well as CGI animation and VFX.</p>
+                    <br />
+                    <p> I am currently a Producer at Maxis, living in the San Francisco Bay Area</p>
+                </div>
+            </section>
+            <section id="blog">
+                    <div class="panel">
+                        <h2>Blog</h2>
+                        <p>Section Coming Soon. Full work history available on <a href="https://www.linkedin.com/in/johnfaciane">LinkedIn</a>.</p>
+                    </div>
+            </section>
+            <section id="portfolio">
+                    <div class="panel">
+                        <h2>Portfolio</h2>
+                        <p>Section Coming Soon. Full work history available on <a href="https://www.linkedin.com/in/johnfaciane">LinkedIn</a>.</p>
+                    </div>
+            </section>
+            <section id="personal-projects">
+                <div class="panel">
+                    <h2>Personal Projects</h2>
+                    <h2>Web Development</h2>
+                    <p>Outside of my love of game development, I'm passionate about learning coding and webdesign. This section contains projects I've been worked on as I learn different coding languages and techniques.</p>
+                </div>
+                <div class="panel">
+                    <h2><a href="guessingGame.html">Guessing Game</a></h2>
+                    <small>Languages used: HTML5, CSS3, JavaScript</small>
+                    <br/>
+                    <small>Framework used: Bootstrap</small>
+                    <p></p>
+                </div>
+                <div class="panel">
+                    <h2><a href="tip_calculator.html">Tip Calculator</a></h2>
+                    <small>Languages used: HTML5, CSS3, JavaScript</small>
+                    <br/>
+                    <small>Framework used: Bootstrap</small>
+                    <p></p>
+                </div>
+            </section>
+            <section id="contact">
+                    <div class="panel">
+                        <h2>Contact Me</h2>
+                        <i class="fas fa-envelope-square white-text"></i> : <a href="mailto:john.faciane@gmail.com">john.faciane@gmail.com</a></p>
+                        <p><i class="fab fa-linkedin white-text"></i> : <a href="https://www.linkedin.com/in/johnfaciane">johnfaciane</a></p>
+                        <p><i class="fab fa-facebook-square white-text"></i> : <a href="https://www.facebook.com/john.faciane">john.faciane</a></p>
+                        <p><i class="fab fa-twitter-square white-text"></i> : <a href="https://twitter.com/Ak_Tokyo_Duck">@Ak_Tokyo_Duck</a></p>
+                        <p><i class="fab fa-instagram-square white-text"></i> : <a href="https://instragram.com/jfaciane">@jfaciane</a></p>
+                    </div>
+            </section>
+            <footer>
+                    <div class="container-flex-column">
+                        <div id="socials-container" class="container-flex-row">
+                            <a href="mailto:john.faciane@gmail.com"><i class="fas fa-envelope-square red-text"></i></a>
+                            <a href="https://www.linkedin.com/in/johnfaciane"><i class="fab fa-linkedin red-text"></i></a>
+                            <a href="https://www.facebook.com/john.faciane"><i class="fab fa-facebook-square red-text"></i></a>
+                            <a href="https://twitter.com/Ak_Tokyo_Duck"><i class="fab fa-twitter-square red-text"></i></a>
+                            <a href="https://instragram.com/jfaciane"><i class="fab fa-instagram-square red-text"></i></a>
+                        </div>
+                        <p>&copy; 2021 John Faciane</p>
+                    </div>
+                
+            </footer>
+        </main>
+    </body>
+<!--         
         <header>
             <div class="logo">
                 <a href="index.html" id="logo">
@@ -47,11 +141,6 @@
                 <div class="clear"> </div>
                 </section>
             </div>
-            <br />
-            <br />
-            <hr>
-            <br />
-            <br />
             <a class="anchor" id="portfolio"></a>
             <div class="container">
                 <section>
@@ -86,30 +175,27 @@
                         <div class="clear"> </div>
                 </section>
             </div>
-            <br />
-            <br />
-            <hr>
             <a class="anchor" id="personal"></a>
             <div class="container">
                 <section>
                     <div>
                         <h3>Personal Projects</h3>
-                        <h4><a href="tip_calculator.html">Tip Calculator</a></h4>
-                        <p>I created this tip calculator as part of my self study of HTML, CSS, and JavaScript.</p>
-                        <p>Tools Used: HTML, CSS, JavaScript, Bootstrap</p>
+                        <p>Under Construction</p>
                     </div>
                 </section>
             </div>
         </div>
-        <br />
-        <br />
-    <footer>
-        <a href="https://www.linkedin.com/in/johnfaciane"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/john.faciane"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com/Ak_Tokyo_Duck"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://instragram.com/jfaciane"><i class="fab fa-instagram-square"></i></a>
-        <p>&copy; 2020 John Faciane</p>
-    </footer>
+ -->
+    <script>
+        function $(selector) {
+            return document.querySelector(selector);
+        }
 
+        function enterSite() {
+            $("#splash-page").style.display = "none";
+            $('#main-site').style.display = "block";
+        }
+        
+    </script>
     </body>
 </html>
