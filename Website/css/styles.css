@@ -4,7 +4,6 @@
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    /* color: white; */
 }
 
 h3, h4 {
@@ -39,24 +38,41 @@ a:visited {
 }
 
 a:hover {
-    color: crimson;
+    color: #3B58B3;
 }
 
 .panel a:hover {
     color: white;
 }
 /* Colors */
+/* 
+#DBD7D8 - Alto - Light Shatdes (Background)
+Use this color as the background for your dark-on-light designs, or the text color of an inverted design.
 
-.red-text {
+#716ED9 - Moody Blue - Light Accent
+Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette.
+
+#3B58B3 - Azure - Main Brand Color
+This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity.
+
+#5B1C86 - Seance - Dark Accent
+Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best.
+
+#161E3B - Big Stone - Dark Shades
+Use as the text color for dark-on-light designs, or as the background for inverted designs.
+
+*/
+
+/* .red-text {
     color: crimson;
 }
 
 .white-text {
     color: white;
-}
+} */
 
 body {
-    background-color: #E1E2E7;
+    background-color: #DBD7D8;
 }
 
 /* Containers */
@@ -133,7 +149,7 @@ footer {
 }
 
 #splash-enter:hover h1 {
-    color: crimson;
+    color: #3B58B3;
     transition: ease-out 200ms;
 }
 
