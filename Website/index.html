@@ -24,8 +24,10 @@
         <main id="main-site">
             <nav id="nav-container">
                 <div id="nav-logo">
-                    <h2 class="red-text">John Faciane</h2>
-                    <p>Video Game Producer</p>
+                    <a href=".">
+                        <h2 class="red-text">John Faciane</h2>
+                        <p>Video Game Producer</p>
+                    </a>
                 </div>
                 <div id="nav-links">
                     <ul>
@@ -39,7 +41,7 @@
             </nav>
             <section id="about">
                 <div class="circular-image container-grid-left">
-                    <img src="img/johnprofile.jpg" alt="picture of John Faciane" id="profile-picture">
+                    <img src="img/johnprofile.png" alt="picture of John Faciane" id="profile-picture">
                 </div>
                 <div class="panel">
                     <h2>Hi, I'm John</h2>
@@ -186,18 +188,18 @@
             </div>
         </div>
  -->
-    <script>
-        function $(selector) {
-            return document.querySelector(selector);
-        }
+        <script>
+            function $(selector) {
+                return document.querySelector(selector);
+            }
 
-        function enterSite() {
-            $("#splash-page").style.display = "none";
-            $('#main-site').style.display = "block";
-        }
-        
-        $('body').on('touchstart', function() {});
-        
-    </script>
+            function enterSite() {
+                $("#splash-page").style.display = "none";
+                $('#main-site').style.display = "block";
+            }
+
+            $('body').on('touchstart', function() {});
+            
+        </script>
     </body>
 </html>
