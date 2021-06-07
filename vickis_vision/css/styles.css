@@ -1,0 +1,342 @@
+/* Font Related */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    color:#DBD7D8;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+/* .blur-text {
+    color: transparent;
+    text-shadow: 0 0 5px #000;
+} */
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: #716ED9;
+}
+
+.panel a:hover {
+    color: white;
+}
+
+footer i {
+    color: #DBD7D8;
+}
+
+footer i:hover {
+    color: #716ED9;
+}
+/* Colors */
+/* 
+#DBD7D8 - Alto - Light Shatdes (Background)
+Use this color as the background for your dark-on-light designs, or the text color of an inverted design.
+
+#716ED9 - Moody Blue - Light Accent
+Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette.
+
+#3B58B3 - Azure - Main Brand Color
+This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity.
+
+#5B1C86 - Seance - Dark Accent
+Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best.
+
+#161E3B - Big Stone - Dark Shades
+Use as the text color for dark-on-light designs, or as the background for inverted designs.
+
+*/
+
+/* .red-text {
+    color: crimson;
+}
+
+.white-text {
+    color: white;
+} */
+
+body {
+    background-color: #DBD7D8;
+    color: #161E3B;
+    /* overflow: hidden; */
+}
+
+/* Containers */
+.container-splash {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-flex-row {
+    display: flex;
+    justify-content: center;
+    margin: 2%; 
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 5%;
+}
+
+.panel {
+    margin: 5%;
+}
+
+footer {
+    width: 100%;
+    position: sticky;
+    overflow:hidden;
+    bottom: 0;
+    padding-bottom: 5px;
+    /* z-index: 1; */
+}
+
+footer::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #DBD7D8;
+    opacity: .1;
+    /* z-index: -1; */
+}
+
+#footer-container {
+    z-index: 1;
+}
+
+/* Sections Start*/
+/* Splash */
+
+#splash-page {
+    background: url('../img/alaska.png') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#splash-page::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #161E3B;
+    opacity: .7;
+}
+
+.splash-logo {
+    text-align: center;
+    color:#DBD7D8;
+    z-index: 2;
+}
+
+.splash-logo h1,p  {
+    margin: 0
+}
+
+.splash-logo h1 {
+    font-size: 5rem;
+}
+
+.splash-logo p {
+    font-size: 2rem;
+}
+
+#splash-enter {
+    background-color: transparent;
+    border: none;
+}
+
+#splash-enter:hover {
+    color: black;
+    text-shadow: none;
+    transition: ease-out 200ms;
+}
+
+#splash-enter:hover h1 {
+    color: #3B58B3;
+    transition: ease-out 200ms;
+}
+
+#splash-enter:hover p {
+    color: #DBD7D8;
+}
+
+/* Main */
+/* #main-site {
+    display: none;
+} */
+
+
+
+/* Nav */
+#nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    color: #DBD7D8;
+    z-index: 1;
+}
+
+nav::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #DBD7D8;
+    opacity: .1;
+}
+
+#nav-logo {
+    z-index: 2;
+}
+
+#nav-logo h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+#nav-logo p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#nav-links {
+    z-index: 2;    
+}
+
+#nav-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-links li {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    display: inline;
+    font-size: 0.7rem;
+    padding: 10px;
+}
+
+
+/* About */
+#about {
+    background: url('../img/sanfrancisco.png') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#DBD7D8;
+}
+
+#about::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #161E3B;
+    opacity: .5;
+}
+
+.circular-image {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    box-shadow: 5px 5px 20px black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#profile-picture {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#about h2, p {
+    z-index: 2;
+}
+
+/* Blog */
+#blog {
+    background-color: #161E3B;
+    color: #DBD7D8;
+}
+
+/* Portfolio */
+#portfolio {
+    background-color: #716ED9;
+}
+
+/* Personal Projects */
+#personal-projects {
+    background-color: #5B1C86;
+    color: #DBD7D8;
+}
+
+/* Contact */
+#contact {
+    background-color: #3B58B3;
+}
+
+#socials-container {
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+#socials-container i {
+    margin: 5px;
+}

@@ -1,26 +1,72 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Vicki's Vision Photography</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/30444e0785.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Layout</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
-    <body id="splash-page">
-    <div class="splash-page">
-        <a href="about.html"><h1>Vicki's Vision Photography</h1></a>
-    <footer class="footer">
-        <a href="https://www.facebook.com/VickisVisionPhotography/"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/vfaciane/"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:vicki@johnfaciane.com"><i class="far fa-envelope"></i></a>
-    </footer>
-    </div>
-    </body>
-    
+<body>
+    <header id="home" class="bg-light text-center">
+        <div class="container">
+            <div id="splash-logo">
+                <p class="text-light">Wild... life</p>
+                <h1>Vicki's Vision Photography</h1>
+                <div id="splash-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div id="nav-container" class="bg-light text-center">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="container container-narrow">
+            <h2>About</h2>
+            <div class="split">
+                <div><img src="https://via.placeholder.com/300x150" alt=""></div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima incidunt hic dolorum sint itaque, sunt sequi est, soluta iste veritatis maiores expedita corrupti iure eius reiciendis placeat asperiores ratione explicabo?</div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="bg-primary">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="split">
+                    <div><img src="img/bridge.png" alt="" class="thumbnail"></div>
+                    <div><img src="img/crater_lake.png" alt="" class="thumbnail"></div>
+                    <!-- <div><img src="img/bridge.png" alt="" class="thumbnail"></div>
+                    <div><img src="img/crater_lake.png" alt="" class="thumbnail"></div> -->
+                    <!-- <div><img src="img/bridge.png" alt="" class="thumbnail"></div>
+                    <div><img src="img/crater_lake.png" alt="" class="thumbnail"></div> -->
+                </div>
+            </div>
+    </section>
+    <section id="contact" class="bg-dark">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="split">
+                    <div><img src="https://via.placeholder.com/300x150" alt="" class="thumbnail"></div>
+                    <div>Contact Info goes here</div>
+                </div>
+            </div>
+    </section>
+    <script>
+        $('body').on('touchstart', function() {});
+    </script>
+</body>
 </html>
