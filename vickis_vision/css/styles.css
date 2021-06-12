@@ -164,6 +164,7 @@ nav {
 #nav-container li {
     display: inline-block;
     margin: 0 25px;
+    font-size: 1rem;
 }
 
 
