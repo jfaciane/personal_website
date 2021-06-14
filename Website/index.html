@@ -13,18 +13,18 @@
     <body>
         <div id="splash-page">
             <div class="container-splash">
-                <div class="splash-logo">
-                    <button type="button" id="splash-enter" onclick="enterSite()" class="blur-text">
+                <div class="splash-logo" id="splash-enter">
+                    <a href="#about" class="blur-text">
                         <h1>John Faciane</h1>
                         <p>Video Game Producer</p>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
         <main id="main-site">
             <nav id="nav-container">
                 <div id="nav-logo">
-                    <a href=".">
+                    <a href="#splash-page">
                         <h2 class="red-text">John Faciane</h2>
                         <p>Video Game Producer</p>
                     </a>
@@ -40,15 +40,15 @@
                 </div>
             </nav>
             <section id="about">
-                <div class="circular-image container-grid-left">
+                <div class="circular-image">
                     <img src="img/johnprofile.png" alt="picture of John Faciane" id="profile-picture">
                 </div>
-                <div class="panel">
-                    <h2>Hi, I'm John</h2>
-                    <p> I am a video game producer with over 8 years of production experience spanning across mobile, console, PC, and browser-based games as well as CGI animation and VFX.</p>
-                    <br />
-                    <p> I am currently a Producer at Maxis, living in the San Francisco Bay Area</p>
-                </div>
+                    <div class="container-flex-column">
+                        <h2>Hi, I'm John</h2>
+                        <p> I am a video game producer with over 8 years of production experience spanning across mobile, console, PC, and browser-based games as well as CGI animation and VFX.</p>
+                        <br />
+                        <p> I am currently a Producer at Maxis, living in the San Francisco Bay Area</p>
+                    </div>
             </section>
             <section id="blog">
                     <div class="panel">
@@ -63,29 +63,31 @@
                     </div>
             </section>
             <section id="personal-projects">
-                <div class="panel">
+                <dic class="container-flex-column">
                     <h2>Personal Projects</h2>
-                    <h2>Web Development</h2>
+                    <h3>Web Development</h3>
                     <p>
                         Outside of my love of game development, I'm passionate about learning coding and web design.
                     </p>
                     <p>
                         This section contains projects I've been worked on as I learn different coding languages and techniques.
                     </p>
-                </div>
-                <div class="panel">
-                    <h2><a href="guessingGame.html">Guessing Game</a></h2>
-                    <small>Languages used: HTML5, CSS3, JavaScript</small>
-                    <br/>
-                    <small>Framework used: Bootstrap</small>
-                    <p></p>
-                </div>
-                <div class="panel">
-                    <h2><a href="tip_calculator.html">Tip Calculator</a></h2>
-                    <small>Languages used: HTML5, CSS3, JavaScript</small>
-                    <br/>
-                    <small>Framework used: Bootstrap</small>
-                    <p></p>
+                
+                <div class="container-flex-row">
+                    <div class="panel">
+                        <h3><a href="guessingGame.html">Guessing Game</a></h3>
+                        <small>Languages used: HTML5, CSS3, JavaScript</small>
+                        <br/>
+                        <small>Framework used: Bootstrap</small>
+                        <p></p>
+                    </div>
+                    <div class="panel">
+                        <h3><a href="tip_calculator.html">Tip Calculator</a></h3>
+                        <small>Languages used: HTML5, CSS3, JavaScript</small>
+                        <br/>
+                        <small>Framework used: Bootstrap</small>
+                        <p></p>
+                    </div>
                 </div>
             </section>
             <section id="contact">
@@ -198,10 +200,10 @@
                 return document.querySelector(selector);
             }
 
-            function enterSite() {
-                $("#splash-page").style.display = "none";
-                $('#main-site').style.display = "block";
-            }
+            // function enterSite() {
+            //     $("#splash-page").style.display = "none";
+            //     $('#main-site').style.display = "block";
+            // }
 
             $('body').on('touchstart', function() {});
             

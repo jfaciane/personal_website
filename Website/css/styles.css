@@ -1,13 +1,16 @@
 /* Font Related */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700&display=swap');
 
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+html {
+    scroll-behavior: smooth;
+    color:#DBD7D8;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
-h3, h4 {
-    font-family: 'Open Sans', sans-serif;
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 p {
@@ -38,14 +41,18 @@ a:visited {
 }
 
 a:hover {
-    color: #DBD7D8;
+    color: #716ED9;
 }
 
 .panel a:hover {
     color: white;
 }
 
-footer a:hover {
+footer i {
+    color: #DBD7D8;
+}
+
+footer i:hover {
     color: #716ED9;
 }
 /* Colors */
@@ -98,6 +105,7 @@ body {
 .container-flex-row {
     display: flex;
     justify-content: center;
+    margin: 2%; 
 }
 
 section {
@@ -108,23 +116,17 @@ section {
     padding: 0 5%;
 }
 
-/* .panel {
-    background-color: #161E3B;
-    box-shadow: 5px 5px 10px black;
-    color: #DBD7D8;
-    flex-grow: 0;
-    margin: 2%;
-    padding: 3%;
-    border-radius: 10px;
-} */
+.panel {
+    margin: 5%;
+}
 
 footer {
     width: 100%;
-    position: fixed;
+    position: sticky;
     overflow:hidden;
     bottom: 0;
     padding-bottom: 5px;
-
+    /* z-index: 1; */
 }
 
 footer::after {
@@ -136,11 +138,11 @@ footer::after {
     left: 0;
     background-color: #DBD7D8;
     opacity: .1;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 #footer-container {
-    z-index: 2;
+    z-index: 1;
 }
 
 /* Sections Start*/
@@ -162,11 +164,12 @@ footer::after {
     top: 0;
     left: 0;
     background-color: #161E3B;
-    opacity: .9;
+    opacity: .7;
 }
 
 .splash-logo {
     text-align: center;
+    color:#DBD7D8;
     z-index: 2;
 }
 
@@ -203,9 +206,9 @@ footer::after {
 }
 
 /* Main */
-#main-site {
+/* #main-site {
     display: none;
-}
+} */
 
 
 
@@ -215,20 +218,22 @@ footer::after {
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
-    color: #DBD7D8
+    color: #DBD7D8;
+    z-index: 1;
 }
 
-#nav-container::after {
+nav::after {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #161E3B;
-    opacity: .95;
+    background-color: #DBD7D8;
+    opacity: .1;
 }
 
 #nav-logo {
@@ -263,10 +268,25 @@ footer::after {
     padding: 10px;
 }
 
+
 /* About */
-/* #about {
-    background-color: ;
-} */
+#about {
+    background: url('../img/sanfrancisco.png') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#DBD7D8;
+}
+
+#about::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #161E3B;
+    opacity: .5;
+}
 
 .circular-image {
     justify-self: center;
@@ -277,12 +297,17 @@ footer::after {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
+    z-index: 2;
 }
 
 #profile-picture {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+#about h2, p {
+    z-index: 2;
 }
 
 /* Blog */
@@ -309,9 +334,9 @@ footer::after {
 
 #socials-container {
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #socials-container i {
-    margin: 10px;
+    margin: 5px;
 }

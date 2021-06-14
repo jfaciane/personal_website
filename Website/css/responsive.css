@@ -3,6 +3,11 @@
         color: transparent;
         text-shadow: 0 0 5px #000;
     }
+
+    #splash-logo {
+        color: none;
+    }
+
     /* Nav */
     #nav-container {
         display: flex;
@@ -34,16 +39,34 @@
     }
     
     section {
-        /* flex-direction: row; */
-        flex: 0 0 auto;
-        justify-content: space-evenly;
+        flex-direction: row;
+        flex: wrap;
+        justify-content: space-around;
         align-items: center;
         height: 100vh;
-        /* padding: 8% 5%; */
+        padding: auto 5%;
     }
 
-    .panel {
-        height: auto;
+    section h2 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+    section small {
+        font-size: 1.3rem;
+    }
+ 
+    .circular-image {
+        flex: 1 0 2;
+    }
+
+    #about .container-flex-column {
+        margin-left: 25px;
+        flex: 0 1 2;
     }
 }
 
