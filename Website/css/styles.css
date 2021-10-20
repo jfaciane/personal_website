@@ -126,7 +126,6 @@ footer {
     overflow:hidden;
     bottom: 0;
     padding-bottom: 5px;
-    z-index: 1;
 }
 
 footer::after {
